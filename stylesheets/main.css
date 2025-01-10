@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Background Colors */
+    --background-color: #121212;
+    --border-color: #2C2C2C;
+
+    /* Text Colors */
+    --text-primary: #E0E0E0;
+    --text-secondary: #B3B3B3;
+    --text-muted: #757575;
+
+    /* Accent Colors */
+    --primary-accent: #1DB954;
+    --secondary-accent: #E91E63;
+
+    /* Interactive Colors */
+    --button-bg: #2D3748;
+    --button-hover: #00BCD4;
+    --link-color: #4FC3F7;
+    --link-hover: #00BCD4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+
+}
+
+body {
+    color: var(--text-primary);
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+img {
+    object-fit: cover;
+}
+
+.btn {
+    border: 2px solid var(--border-color);
+    background: var(--button-bg);
+    color: var(--text-primary);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+
+
+.btn:hover {
+    background: var(--button-hover);
+    color: var(--text-secondary);
+    border-color: var(--text-muted)
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    padding-right: 20px;
+}
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+}
+ .navbar__logo img {
+    width: 35px;
+}
+
+.navbar__menu {
+    display: flex;
+    gap: 20px;
+}
+.navbar__link{
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+
+}
+.navbar__link:hover {
+    color: var(--primary-accent);
+}
+.navbar__actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;;
+}
+.navbar__actions .btn {
+    margin-left: 20px;
+    width: 100px;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.navbar__location h5 {
+    font-weight: 500;
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+.navbar__location p {
+    font-size: 11px;
+    font-weight: 600;
+}
