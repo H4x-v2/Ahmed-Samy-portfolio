@@ -79,3 +79,27 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleSwitch = document.getElementById("input");
+    const body = document.body;
+  
+    // Check localStorage for the user's theme preference
+    const currentTheme = localStorage.getItem("theme");
+  
+    if (currentTheme === "dark") {
+      body.classList.add("dark-theme");
+      toggleSwitch.checked = true;
+    }
+  
+    toggleSwitch.addEventListener("change", () => {
+      if (toggleSwitch.checked) {
+        body.classList.add("dark-theme");
+        localStorage.setItem("theme", "dark");
+      } else {
+        body.classList.remove("dark-theme");
+        localStorage.setItem("theme", "light");
+      }
+    });
+  });
+  

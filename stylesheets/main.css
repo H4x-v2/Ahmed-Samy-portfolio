@@ -56,8 +56,8 @@
     --light-button-border: #BDBDBD;
     /* Subtle border color */
 }
-
-[data-theme="dark"] {
+/*
+.dark-theme {
         --background-color: #000000;
         --border-color: #2C2C2C;
         --text-primary: #E0E0E0;
@@ -73,7 +73,7 @@
         --button-border: #B3B3B3;
 }
 
-[data-theme="light"] {
+.light-theme {
         --background-color: #FFFFFF;
         --border-color: #E0E0E0;
         --text-primary: #212121;
@@ -89,7 +89,7 @@
         --button-border: #BDBDBD;
 }
 
-/* Default (dark theme) */
+ */
 
 
 .navbar {
@@ -122,7 +122,7 @@
     background: #555;
 }
 
-
+/*
 .switch {
     position: relative;
     display: inline-block;
@@ -397,7 +397,7 @@
         transform: scale(1);
     }
 }
-
+*/
 * {
     box-sizing: border-box;
     margin: 0;
