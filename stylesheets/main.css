@@ -57,6 +57,38 @@
     /* Subtle border color */
 }
 
+[data-theme="dark"] {
+        --background-color: #000000;
+        --border-color: #2C2C2C;
+        --text-primary: #E0E0E0;
+        --text-secondary: #B3B3B3;
+        --text-muted: #757575;
+        --primary-accent: #4f09c8;
+        --secondary-accent: #E91E63;
+        --button-bg: #333333;
+        --button-text: #FFFFFF;
+        --button-hover: #a83dc8;
+        --link-color: #4FC3F7;
+        --link-hover: #FFFFFF;
+        --button-border: #B3B3B3;
+}
+
+[data-theme="light"] {
+        --background-color: #FFFFFF;
+        --border-color: #E0E0E0;
+        --text-primary: #212121;
+        --text-secondary: #424242;
+        --text-muted: #757575;
+        --primary-accent: #6200EE;
+        --secondary-accent: #C2185B;
+        --button-bg: #F5F5F5;
+        --button-text: #212121;
+        --button-hover: #D1C4E9;
+        --link-color: #1565C0;
+        --link-hover: #0D47A1;
+        --button-border: #BDBDBD;
+}
+
 /* Default (dark theme) */
 
 
