@@ -920,18 +920,20 @@ footer {
     }
 
     .hero .btn {
+
         font-size: 9px;
         padding: 5px 10px;
     }
 
     .skills {
+        margin-top: 110px;
         flex-direction: column;
         align-items: center;
     }
 
     .skills_desc {
         position: relative;
-        left: 10%;
+        left: 12%;
         flex-direction: column;
         align-items: center;
         width: 100%;
