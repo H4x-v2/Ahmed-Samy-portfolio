@@ -6,24 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
   <link rel="stylesheet" href="stylesheets/main.css" />
-  <style>
-    body {
-      background-color: #121212;
-    }
-  </style>
-  <title>Ahmed Samy</title>
   <script src="script.js"></script>
+  <title>Ahmed Samy</title>
 </head>
 
 <body>
+  <div class="mobile">
+    <input type="checkbox" class="menu-toggle" id="menu-toggle"></input>
+    <label for="menu-toggle" class="menu-label"><img src="assets/dark-theme/menu.png"></label>
+    <div class="overlay"></div>
+    <ul class="nav-menu">
+      <li class="close-li"><label for="menu-toggle" class="close-menu"><img src="assets/dark-theme/close.png"></label></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#">My Courses</a></li>
+      <li><a href="#end">About</a></li>
+    </ul>
+  </div>
   <nav class="navbar">
     <a href="#" class="navbar__logo"><img src="assets/dark-theme/logo.png" />Logo.</a>
     <div class="navbar__menu">
       <a href="#" class="navbar__link">Home</a>
-      <a href="#" class="navbar__link">Projects</a>
-      <a href="#" class="navbar__link">Skills</a>
+      <a href="#projects" class="navbar__link">Projects</a>
+      <a href="#skills" class="navbar__link">Skills</a>
       <a href="#" class="navbar__link">My Courses</a>
-      <a href="#" class="navbar__link">About</a>
+      <a href="#end" class="navbar__link">About</a>
     </div>
     <div class="navbar__actions">
       <div class="navbar__location">
@@ -128,7 +136,7 @@
         <a href="#"><img src="assets/dark-theme/whatsapp.png" alt="WhatsApp" /></a>
       </aside>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
       <div class="skills_desc">
         <h2>Skills &amp; Expertise</h2>
         <p>
@@ -180,7 +188,7 @@
             <a href="#" class="icon-link"><img src="assets/dark-theme/share.png" /></a>
           </div>
         </div>
-        <div class="category__projects">
+        <div class="category__projects" id="projects">
           <!--Card 1-->
           <div class="project__card">
             <video src="assets/1.mp4"></video>
@@ -388,7 +396,7 @@
     </div>
     </div>
   </section>
-  <div class="end">
+  <div class="end" id="end">
     <h5>Got a Project?</h5>
     <h1>Let's Work Together!</h1>
     <button class="btn">Send Message</button>
