@@ -109,27 +109,28 @@
 }
 
 ::-webkit-scrollbar {
-    width: 2px;
+    display: none;
 }
+/*
 
-/* Track */
 ::-webkit-scrollbar-track {
     background-color: var(--border-color);
     border-radius: 10px;
 }
 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
 
     background: var(--button-hover);
     border-radius: 20px;
 }
 
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
 
+/*
 /*
 .switch {
     position: relative;
@@ -939,6 +940,107 @@ footer {
     display: flex;
     gap: 10px;
 }
+
+
+
+
+.hero__image {
+animation: img__animation 1s ease;
+}
+
+
+.hero__content h2 {
+    animation: hero__h2__animation 1.3s ease;
+}
+
+.navbar {
+    animation: navbar__animation 1s ease;
+}
+.hero__intro {
+    animation: intro__animation 2s ease;
+}
+.hero__socials a {
+    animation: socials__link__animation 1s ease;
+}
+
+
+@keyframes socials__link__animation {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes intro__animation {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes navbar__animation {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes img__animation {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes hero__h2__animation {
+    from {
+        transform: translate(-100%,-53px);
+    }
+    to {
+        transform: translate(-1px, -53px)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:1000px) {
 
