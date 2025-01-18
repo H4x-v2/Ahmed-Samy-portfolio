@@ -40,6 +40,9 @@ html {
 
 .navbar {
     transition: background-color 0.3s ease;
+    position: fixed;
+    background: var(--button-bg);
+    z-index: 1;
 }
 
 ::-webkit-scrollbar {
@@ -94,12 +97,12 @@ img {
 }
 
 .navbar {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 60px;
-    padding-right: 20px;
-    background: none;
+    padding: 0px 20px;
+    padding-bottom: 1px;
 }
 
 
@@ -108,6 +111,8 @@ img {
 }
 
 .navbar__menu {
+    position: relative;
+    right: 30%;
     display: flex;
     gap: 20px;
 }
@@ -256,64 +261,98 @@ img {
     border-color: var(--primary-accent);
 }
 
-
 .showcase {
-    margin: 5% 1%;
-    background: var(--background-color);
-
+    display: flex;
+    flex-direction: column;
+    margin: 250px 90px;
 }
 
+.showcase__header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
-.category__projects {
-    margin-top: 20px;
+.actions {
+    align-items: center;
     display: flex;
     justify-content: space-between;
+}
+
+.action__buttons {
+    align-items: center;
+    display: flex;
     gap: 10px;
 }
 
-.project__card {
-    position: relative;
-    width: 24%;
-}
-
-.project__card video {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0.5px solid rgba(255, 255, 255, 0.5);
-}
-
-.vid__btn {
-    position: absolute;
-    top: 110px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
-    display: flex;
-    background: rgba(86, 85, 85, 0.42);
-    backdrop-filter: blur(8.7px);
-    -webkit-backdrop-filter: blur(8.7px);
-    border: 1px solid rgba(86, 85, 85, 0.3);
+.action__buttons button {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
     border-radius: 50%;
-    color: var(--button-border);
-    padding: 16px 16px 16px 20px;
+    padding: 6px 7px;
+    padding-bottom: 4px;
     cursor: pointer;
 }
 
-.project-card__info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 8px;
+.action__buttons button img {
+    object-position: top center;
+    width: 15px;
+    height: 15px;
 }
 
-.project-card__info h5 {
-    font-size: 17px;
-    font-weight: 300;
-    transform: translateY(-350%);
+.showcase__seperator {
+    height: 1px;
+    width: 300px;
+    background: linear-gradient(to right, var(--primary-accent) 0%, #000000 80%);
+}
+
+.showcase__projects {
+    overflow-x: hidden;
+}
+
+.all {
+    width: 200%;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.card__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 20%;
+}
+
+.card video {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.vid__btn {
+    position: relative;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    background: rgba(51, 51, 51, 0.197);
+    border: none;
+    border-radius: 50%;
+    padding: 7px 8px;
+    padding-bottom: 4px;
+}
+
+.vid__btn img {
+    width: 40px;
+    height: 40px;
+    object-position: top center;
+}
+
+.card__title {
+    position: relative;
+    align-self: center;
+    transform: translateY(-200%);
 }
 
 .end {
@@ -473,23 +512,6 @@ footer {
         padding: 5px 10px;
     }
 
-    .project__card {
-        height: 280px;
-    }
-
-    .project-card__desc {
-        height: 40px;
-        overflow: auto;
-    }
-
-    .project-card__info h5 {
-        font-size: 15px;
-    }
-
-    .project-card__info p {
-        font-size: 11px;
-    }
-
     .hero__image {
         animation: img__animation 1s ease;
     }
@@ -605,30 +627,6 @@ footer {
     .hero .btn {
         font-size: 9px;
         padding: 5px 10px;
-    }
-
-    .category__projects {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-    }
-
-    .project__card {
-        width: 100%;
-        height: 320px;
-    }
-
-    .project-card__desc {
-        height: 80px;
-        overflow: auto;
-    }
-
-    .project-card__info h5 {
-        font-size: 15px;
-    }
-
-    .project-card__info p {
-        font-size: 11px;
     }
 
     .footer__p {
@@ -779,33 +777,6 @@ footer {
     .hero .btn {
         font-size: 20px;
         padding: 10px 60px;
-    }
-
-    .project__card {
-        height: 450px;
-    }
-
-    .project-card__desc {
-        height: 90px;
-        margin-bottom: 0px;
-        font-size: 20px;
-        font-weight: 350;
-    }
-
-    .project-card__info h5 {
-        font-size: 20px;
-    }
-
-    .project__card video {
-        height: 250px;
-    }
-
-    .vid__btn {
-        top: 145px;
-    }
-
-    .project-card__info p {
-        font-size: 18px;
     }
 
     .hero__image {
@@ -1076,47 +1047,6 @@ footer {
     .hero .btn {
         font-size: 12px;
         padding: 10px 10px;
-    }
-
-    .category__projects {
-        display: block;
-        align-items: center;
-    }
-
-    .showcase {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .project__card {
-        width: 90%;
-        height: 280px;
-        left: 5%;
-    }
-
-    .project__card video {
-        height: 260px;
-    }
-
-    .vid__btn {
-        transform: translateY(15px);
-        transform: translateX(-25px);
-    }
-
-    .project-card__desc {
-        height: 80px;
-        overflow: auto;
-    }
-
-    .project-card__info h5 {
-        font-size: 14px;
-        padding-bottom: 5px;
-    }
-
-    .project-card__info p {
-        font-size: 12px;
     }
 
     .end h5 {

@@ -11,13 +11,14 @@
 </head>
 
 <body>
-  
+
   <div class="mobile">
     <input type="checkbox" class="menu-toggle" id="menu-toggle"></input>
     <label for="menu-toggle" class="menu-label"><img src="assets/dark-theme/menu.png"></label>
     <div class="overlay"></div>
     <ul class="nav-menu">
-      <li class="close-li"><label for="menu-toggle" class="close-menu"><img src="assets/dark-theme/close.png"></label></li>
+      <li class="close-li"><label for="menu-toggle" class="close-menu"><img src="assets/dark-theme/close.png"></label>
+      </li>
       <li><a href="#">Home</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -25,7 +26,6 @@
       <li><a href="#end">About</a></li>
     </ul>
   </div>
-  <div class="background__img">
   <nav class="navbar">
     <a href="#" class="navbar__logo"><img src="assets/logo.png" /></a>
     <div class="navbar__menu">
@@ -35,110 +35,100 @@
       <a href="#" class="navbar__link">My Courses</a>
       <a href="#end" class="navbar__link">About</a>
     </div>
-    <div class="navbar__actions">
-      <div class="navbar__location">
-        <h5>EGY, Cairo</h5>
-        <p>6:18:31 pm</p>
-      </div>
-    </div>
   </nav>
-  <div class="mobile-container">
-    <section class="hero">
-      <div class="hero__content">
-        <img src="assets/profile2.png" alt="Profile Image" class="hero__image" />
-      </div>
-      <div class="hero__intro">
-        <h3>Video Editor Based In Cairo, Egypt</h3>
-        <p>
-          I am a video editor with two years of experience, specializing in creating visually captivating content. <br> I focus on Storytelling, Sound design and Color grading to deliver professional-grade visuals. Proficient in Adobe Premiere Pro and Final Cut Pro, I can manage projects from start to finish with precision and creativity.
-        </p>
-        <div class="hero__action">
+  <div class="background__img">
+    <div class="mobile-container">
+      <section class="hero">
+        <div class="hero__content">
+          <img src="assets/profile2.png" alt="Profile Image" class="hero__image" />
+        </div>
+        <div class="hero__intro">
+          <h3>Video Editor Based In Cairo, Egypt</h3>
+          <p>
+            I am a video editor with two years of experience, specializing in creating visually captivating content.
+            <br> I focus on Storytelling, Sound design and Color grading to deliver professional-grade visuals.
+            Proficient in Adobe Premiere Pro and Final Cut Pro, I can manage projects from start to finish with
+            precision and creativity.
+          </p>
+          <div class="hero__action">
             <button class="btn">Work With Me</button>
             <button class="btn btn--secondary">See My Portfolio</button>
           </div>
-          </div>
-      </div>
-      <aside class="hero__socials">
-        <a href="#"><img src="assets/dark-theme/instagram.png" alt="Instagram" /></a>
-        <a href="#"><img src="assets/dark-theme/facebook.png" alt="Facebook" /></a>
-        <a href="#"><img src="assets/dark-theme/drive.png" alt="Drive" /></a>
-        <a href="#"><img src="assets/dark-theme/whatsapp.png" alt="WhatsApp" /></a>
-      </aside>
+        </div>
+    </div>
+    <aside class="hero__socials">
+      <a href="#"><img src="assets/dark-theme/instagram.png" alt="Instagram" /></a>
+      <a href="#"><img src="assets/dark-theme/facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="assets/dark-theme/drive.png" alt="Drive" /></a>
+      <a href="#"><img src="assets/dark-theme/whatsapp.png" alt="WhatsApp" /></a>
+    </aside>
     </section>
   </div>
   </div>
   <section class="showcase">
-    <div class="showcase__categories">
-      <section class="category">
-        <div class="category__projects" id="projects">
-          <!--Card 1-->
-          <div class="project__card">
+    <div class="showcase__header">
+      <div class="actions">
+        <h2>Some of My Recent Projects</h2>
+        <div class="action__buttons">
+          <button class="navigation"><img src="assets/dark-theme/left-arrow.png"></button>
+          <button class="navigation"><img src="assets/dark-theme/right-arrow.png"></button>
+        </div>
+      </div>
+      <div class="showcase__seperator"></div>
+    </div>
+    <div class="showcase__projects">
+      <div class="all">
+        <!--Card-->
+        <div class="card__container">
+          <div class="card">
             <video src="assets/1.mp4"></video>
-            <div class="project-card__info">
-              <h5>Project Title 1</h5>
-            </div>
-            <button class="vid__btn"> <i class="ri-play-fill"></i></button>
+            <button class="vid__btn"><img src="assets/dark-theme/video.png"></button>
           </div>
-          <!--Card 2-->
-          <div class="project__card">
-            <video src="assets/2.mp4"></video>
-            <div class="project-card__info">
-              <h5>Project Title 1</h5>
-            </div>
-            <button class="vid__btn"> <i class="ri-play-fill"></i></button>
-          </div>
-          <!--Card 3-->
-          <div class="project__card">
-            <video src="assets/3.mp4"></video>
-            <div class="project-card__info">
-              <h5>Project Title 1</h5>
-            </div>
-            <button class="vid__btn"> <i class="ri-play-fill"></i></button>
-          </div>
-          <!--Card 4-->
-          <div class="project__card">
-            <video src="assets/4.mp4"></video>
-            <div class="project-card__info">
-              <h5>Project Title 1</h5>
-            </div>
-            <button class="vid__btn"> <i class="ri-play-fill"></i></button>
+          <div class="card__title">
+            <h3>Title</h3>
           </div>
         </div>
-        <div class="category__projects">
-          <!--Card 5-->
-          <div class="project__card">
-            <video src="assets/1.mp4"></video>
-            <div class="project-card__info">
-              <h5>Project Title 1</h5>
-            </div>
-            <button class="vid__btn"> <i class="ri-play-fill"></i></button>
-          </div>
-          <!--Card 6-->
-          <div class="project__card">
+        <!--Card-->
+        <div class="card__container">
+          <div class="card">
             <video src="assets/2.mp4"></video>
-            <div class="project-card__info">
-              <h5>Project Title 1</h5>
-            </div>
-            <button class="vid__btn"> <i class="ri-play-fill"></i></button>
+            <button class="vid__btn"><img src="assets/dark-theme/video.png"></button>
           </div>
-          <!--Card 7-->
-          <div class="project__card">
-            <video src="assets/3.mp4"></video>
-            <div class="project-card__info">
-              <h5>Project Title 1</h5>
-            </div>
-            <button class="vid__btn"> <i class="ri-play-fill"></i></button>
-          </div>
-          <!--Card 8-->
-          <div class="project__card">
-            <video src="assets/4.mp4"></video>
-            <div class="project-card__info">
-              <h5>Project Title 1</h5>
-            </div>
-            <button class="vid__btn"> <i class="ri-play-fill"></i></button>
+          <div class="card__title">
+            <h3>Title</h3>
           </div>
         </div>
-      </section>
+        <!--Card-->
+        <div class="card__container">
+          <div class="card">
+            <video src="assets/4.mp4"></video>
+            <button class="vid__btn"><img src="assets/dark-theme/video.png"></button>
+          </div>
+          <div class="card__title">
+            <h3>Title</h3>
+          </div>
+        </div>
+        <!--Card-->
+        <div class="card__container">
+          <div class="card">
+            <video src="assets/3.mp4"></video>
+            <button class="vid__btn"><img src="assets/dark-theme/video.png"></button>
+          </div>
+          <div class="card__title">
+            <h3>Title</h3>
+          </div>
+        </div>
+        <!--Card-->
+        <div class="card__container">
+          <div class="card">
+            <video src="assets/2.mp4"></video>
+            <button class="vid__btn"><img src="assets/dark-theme/video.png"></button>
+          </div>
+          <div class="card__title">
+            <h3>Title</h3>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <div class="end" id="end">
